@@ -9,6 +9,10 @@ function agregarAmigo(){
     if(nombreAmigo===""){
         alert('Por favor, ingresa un nombre')
         
+    }if (!isNaN(nombreAmigo)) {
+            alert('Por favor, ingresa un nombre válido');
+            input.value = "";
+            return;
     }else{
         amigos.push(nombreAmigo);
         input.value="";
@@ -42,3 +46,4 @@ function sortearAmigo(){
         return;
     }
 }
+
