@@ -29,3 +29,16 @@ function actualizarLista(){
     });
 
 }
+
+function sortearAmigo(){
+    if(amigos.length<2){
+        alert('No hay suficientes amigos para sortear');
+    
+    }else{
+        let amigoSorteado=amigos[Math.floor(Math.random()*amigos.length)];
+        let resultado=document.getElementById('resultado');
+
+        resultado.innerHTML=`El amigo sorteado es: ${amigoSorteado}!!`;
+        return;
+    }
+}
